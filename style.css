@@ -1,0 +1,147 @@
+@font-face {
+  font-family: 'MyComicSans';
+  src: url('ComicSansMS.ttf') format('truetype');
+}
+
+body {
+  font-family: 'MyComicSans', sans-serif;
+  background-color: #000;
+  color: #00ff00;
+  text-align: center;
+  background-image: url('https://www.transparenttextures.com/patterns/black-felt.png');
+  background-repeat: repeat;
+}
+
+.marquee {
+  font-size: 24px;
+  color: yellow;
+  background: purple;
+  padding: 5px;
+}
+
+.blinky {
+  animation: blinker 1s step-start infinite;
+  color: red;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.container {
+  border: 5px double lime;
+  padding: 20px;
+  margin: 20px;
+}
+
+
+
+.chatbox {
+  width: 300px;
+  height: 200px;
+  border: 3px dashed magenta;
+  margin: 0 auto;
+  overflow-y: scroll;
+  background: #111;
+  padding: 10px;
+  font-size: 12px;
+  text-align: left;
+  color: cyan;
+}
+
+
+
+
+.chatbox-container {
+  max-width: 600px;
+  margin: 2rem auto;
+  border: 3px double #888;
+  padding: 1rem;
+  background: #fff8f8;
+  box-shadow: 0 0 10px #ccc;
+  font-family: 'Courier New', monospace;
+}
+
+#username, #message {
+  width: 100%;
+  margin: 0.5rem 0;
+  background: #fff;
+  border: 1px solid #999;
+  padding: 0.5rem;
+  font-family: inherit;
+}
+
+button {
+  background: #fdd;
+  border: 1px solid #f88;
+  padding: 0.4rem 1rem;
+  font-family: inherit;
+  cursor: pointer;
+}
+
+.chat-log {
+  margin-top: 1rem;
+  padding: 1rem;
+  background: #f9f9f9;
+  height: 200px;
+  overflow-y: auto;
+  border: 1px dashed #ccc;
+  font-size: 0.9rem;
+  white-space: pre-wrap;
+}
+
+
+
+
+#bonzi-container {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  width: 150px;
+  z-index: 9999;
+  font-family: Comic Sans MS, cursive, sans-serif;
+}
+
+#bonzi {
+  width: 100%;
+  image-rendering: pixelated;
+}
+
+#bonzi-speech {
+  background: rgb(111, 17, 119);
+  border: 2px dashed rgb(101, 219, 107);
+  padding: 4px;
+  margin-top: 5px;
+  font-size: 12px;
+  animation: bonziTalk 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes bonziTalk {
+  from { transform: translateY(0px); }
+  to { transform: translateY(-2px); }
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: url('https://i.gifer.com/Yz8l.gif');
+}
+
+
+::-webkit-scrollbar {
+  width: 20px;
+  background: hotpink;
+}
+
+::-webkit-scrollbar-thumb {
+  background: repeating-linear-gradient(
+    45deg,
+    lime,
+    lime 10px,
+    fuchsia 10px,
+    fuchsia 20px
+  );
+  border-radius: 0px;
+  border: 3px dotted yellow;
+}
+
